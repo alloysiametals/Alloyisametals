@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               Quick Links
             </h4>
             <ul className="space-y-3">
-              {["Home", "About", "Services", "Products", "Contact"].map((page) => (
+              {["Home", "About", "Services", "Contact"].map((page) => (
                 <li key={page}>
                   <Link
                     to={`/${page === "Home" ? "" : page.toLowerCase()}`}
