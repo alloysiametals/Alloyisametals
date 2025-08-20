@@ -6,7 +6,6 @@ import StainlessImg from "../assets/bg4.jpg";
 import DuplexImg from "../assets/Hastelloy X.jpg";
 import AerospaceImg from "../assets/aerospace.jpg";
 import TitaniumImg from "../assets/Inconel 625 625LCF.jpg";
-import CarbonImg from "../assets/Inconel 718.jpg";
 import AluminumImg from "../assets/Inconel 718.jpg";
 
 interface Category {
@@ -36,12 +35,12 @@ const categories: Category[] = [
     route: "/products/stainless-steel"
   },
   { 
-    title: "Duplex & Super Alloys", 
+    title: "Austenitic Stainless & Duplex Alloys", 
     image: DuplexImg, 
     hoverBorder: "hover:border-pink-500",
     accent: "bg-pink-500",
     description: "High strength applications",
-    route: "/products/duplex-super-alloys"
+    route: "/austenitic-stainless-duplex-alloys"
   },
   { 
     title: "Aerospace Alloys", 
@@ -49,7 +48,7 @@ const categories: Category[] = [
     hoverBorder: "hover:border-purple-500",
     accent: "bg-purple-500",
     description: "Precision engineering materials",
-    route: "/products/aerospace-alloys"
+    route: "/aerospace-alloys"
   },
   { 
     title: "Titanium Alloys", 
@@ -60,21 +59,13 @@ const categories: Category[] = [
     route: "/products/titanium-alloys"
   },
   { 
-    title: "Carbon & Alloy Steel", 
-    image: CarbonImg, 
-    hoverBorder: "hover:border-red-500",
-    accent: "bg-red-500",
-    description: "Industrial grade performance",
-    route: "/products/carbon-alloy-steel"
-  },
-  { 
-    title: "Aluminum Alloys", 
+    title: "Other Miscellaneous Alloys", 
     image: AluminumImg, 
     hoverBorder: "hover:border-orange-500",
     accent: "bg-orange-500",
     description: "Lightweight excellence",
-    route: "/products/aluminum-alloys"
-  },
+    route: "/products/other-miscellaneous-alloys"
+  }
 ];
 
 const KeyProductCategories: React.FC = () => {
